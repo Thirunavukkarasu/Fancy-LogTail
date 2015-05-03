@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-1 col-md-8">
+			<table class="table table-bordered">
+	            <tr>
+	                <th>File</th>
+	                <th>Open</th>
+					<th>Download</th>
+					<th>Match</th>	                
+	            </tr>			
+				<tr ng-repeat="file in directoryContents">
+					<td>{{file.logFileAbsolutePath}}</td>
+					<td><span class="fa fa-folder-open" ng-click="onClickOpenIcon($index)"></span></td>
+					<td><span class="fa fa-download" ng-click="onClickDownloadIcon($index)"></span></td>
+					<td><span class="fa fa-check"></span></td>										
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

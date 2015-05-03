@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-1 col-md-8">
+			<table class="table table-bordered">
+	            <tr>
+	                <th>Folder</th>
+	                <th>#</th>
+	            </tr>			
+				<tr ng-repeat="directory in directoryList" ng-mouseover="onHoverFolder($index)" ng-click="onClickFolder($index)" ng-class="{'selected':$index == selectedRow}">
+					<td>{{directory.logFileAbsolutePath}}</td>
+					<td><span class="fa fa-folder-open fa-1x"></span></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>

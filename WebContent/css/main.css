@@ -1,0 +1,14 @@
+.navbar-brand {
+    font-size: 22px;
+}
+
+.selected{
+    background-color:black;
+    color:white;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.fa:hover{
+	cursor: pointer;
+}
